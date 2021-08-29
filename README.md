@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Advertisement Webpage
 
-Things you may want to cover:
+* Webpage that show all the published advertisement by the users.
+* User can Signup, Signout, Login. Also can delete or modify their account.
+* User can create, edit, delete the advertisement.
+* User can create advertisement only when ther are login.
+* User can delete or edit the advertisement only if it is their own advertisement.
+* No user can delete or edit someone else's advertisement but can see.
 
-* Ruby version
+***Deployed Here: https://afternoon-basin-98957.herokuapp.com/***
 
-* System dependencies
 
-* Configuration
+### Guides that can be helpful -:
+* https://getbootstrap.com/docs/5.1/getting-started/introduction/
+* https://guides.rubyonrails.org/v3.2/migrations.html#supported-types
+* https://guides.rubyonrails.org/association_basics.html
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### What I have used -:
+* Ruby 3.0.2
+* Rails 6.1.4.1
