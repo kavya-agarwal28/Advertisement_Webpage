@@ -1,0 +1,26 @@
+<p>
+  <strong>Image url:</strong>
+  <%= @advertisement.image_url %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @advertisement.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @advertisement.text %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @advertisement.comment %>
+</p>
+
+<%= link_to 'Edit', edit_advertisement_path(@advertisement), class:'btn btn-dark' %>  
+<%= link_to 'Back', advertisements_path, class:'btn btn-dark' %>
+
+
+
+

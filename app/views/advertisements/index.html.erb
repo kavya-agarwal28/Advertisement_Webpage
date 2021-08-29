@@ -1,0 +1,21 @@
+<h4 class='d-flex justify-content-between mb-4'>
+  <span>Advertisements</span>
+  
+</h4>
+
+<% @advertisements.each do |advertisement| %>
+   <%= link_to advertisement, class:'text-decoration-none' do %>
+     <div class="card" style="width: 40%;">
+       <img class="card-img-top" src=<%= advertisement.image_url %> alt='Card image cap'>
+       <div class="card-body">
+         <h5 class="card-title mb-1 text-dark"><%= advertisement.title %></h5>
+         <p class="text-secondary mb-0"><%= advertisement.text %></p>
+         <p class="text-secondary mb-0"><%= advertisement.comment %></p>
+         <h5 align='right'>User Id: <%= advertisement.user_id %></h5>
+         <br/>
+         <%= link_to 'Delete', advertisement, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-secondary' %>
+        </div>
+      </div>
+   <% end %>
+  <br/> <br/>
+<% end %>
